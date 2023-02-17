@@ -59,7 +59,7 @@ let
 in
 [
   ./alacritty
-  ./autorandr
+  # ./autorandr
   ./browsers/firefox.nix
   ./dconf
   ./git

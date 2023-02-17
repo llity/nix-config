@@ -5,7 +5,7 @@ let
   rg      = "${pkgs.ripgrep}/bin/rg";
   wc      = "/run/current-system/sw/bin/wc";
 
-  # Tongfang
+  # vm
   eth1  = "eno1";
   wifi1 = "wlp1s0";
 

@@ -13,8 +13,8 @@ let
   };
   virtualisation.vmware.guest.enable = true;
   virtualisation.vmware.guest.headless = true;
-  services.openssh.enable = true;
-  services.openssh.permitRootLogin = "yes";
+  # services.openssh.enable = true;
+  # services.openssh.permitRootLogin = "yes";
   myfonts = pkgs.callPackage fonts/default.nix { inherit pkgs; };
 
   hosts = lib.secretManager {

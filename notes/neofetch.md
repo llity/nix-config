@@ -1,7 +1,7 @@
 neofetch
 ========
 
-Some generic machines like the `Tongfang` do not provide host info so we can just specify it the `~/.config/neofetch/config.conf` file. E.g.
+Some generic machines like the `vm` do not provide host info so we can just specify it the `~/.config/neofetch/config.conf` file. E.g.
 
 ```
 # See this wiki page for more info:
@@ -11,7 +11,7 @@ print_info() {
     info underline
 
     info "OS" distro
-    prin "$(color 6)Host: Tongfang PF5NU1G 15.6 AMD"
+    prin "$(color 6)Host: vm PF5NU1G 15.6 AMD"
     #info "Host" model
     info "Kernel" kernel
     info "Uptime" uptime
