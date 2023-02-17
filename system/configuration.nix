@@ -58,7 +58,7 @@ in
   i18n.defaultLocale = "en_US.UTF-8";
 
   # Set your time zone.
-  time.timeZone = "Europe/Warsaw";
+  time.timeZone = "Asia/Shanghai";
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
@@ -100,7 +100,7 @@ in
     };
   };
 
-  users.extraGroups.vboxusers.members = [ "gvolpe" ];
+  users.extraGroups.vboxusers.members = [ "llity" ];
 
   security.rtkit.enable = true;
 
@@ -166,7 +166,7 @@ in
   programs.fish.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.gvolpe = {
+  users.users.llity = {
     isNormalUser = true;
     extraGroups = [ "docker" "networkmanager" "wheel" "scanner" "lp" ]; # wheel for ‘sudo’.
     shell = pkgs.fish;
@@ -205,7 +205,7 @@ in
       auto-optimise-store = true;
 
       # Required by Cachix to be used as non-root user
-      trusted-users = [ "root" "gvolpe" ];
+      trusted-users = [ "root" "llity" ];
 
       experimental-features = [ "nix-command" "flakes" ];
       warn-dirty = false;
