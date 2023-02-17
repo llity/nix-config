@@ -9,5 +9,8 @@ let
   imports = lib.mapAttrsToList toImport (lib.filterAttrs filterCaches (builtins.readDir folder));
 in {
   inherit imports;
-  nix.settings.substituters = ["https://cache.nixos.org/"];
+  nix.settings.substituters = [
+    "https://mirrors.tuna.tsinghua.edu.cn/nix-channels/store"
+    "https://mirror.sjtu.edu.cn/nix-channels/store"
+    "https://cache.nixos.org/"];
 }
