@@ -1,5 +1,5 @@
 {
-  description = "llity's Home Manager & NixOS configurations";
+  description = "gvolpe's Home Manager & NixOS configurations";
 
   inputs = {
     #nixpkgs.url = "nixpkgs/nixos-unstable";
@@ -21,15 +21,15 @@
     };
 
     neovim-flake = {
-      #url = git+file:///home/llity/workspace/neovim-flake;
-      url = github:llity/neovim-flake;
+      #url = git+file:///home/gvolpe/workspace/neovim-flake;
+      url = github:gvolpe/neovim-flake;
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
     # Fish shell
 
     fish-bobthefish-theme = {
-      url = github:llity/theme-bobthefish;
+      url = github:gvolpe/theme-bobthefish;
       flake = false;
     };
 
