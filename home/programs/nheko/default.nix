@@ -21,7 +21,7 @@ in
         accessToken = token;
         deviceId = "CGDVEGHPLX";
         homeServer = "https://matrix-client.matrix.org:443";
-        userId = "@@llity:matrix.org";
+        userId = "@@gvolpe:matrix.org";
       };
 
       sidebar = {
