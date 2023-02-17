@@ -30,7 +30,7 @@
       };
     };
   # networking = {
-  #   hostName = "tongfang-amd";
+  #   hostName = "vm-nix";
   #   interfaces = {
   #     eno1.useDHCP = true;
   #     wlp1s0.useDHCP = true;

@@ -20,13 +20,13 @@ rebuild_home_hdmi() {
 }
 
 rebuild_system() {
-  # nix build .#nixosConfigurations.tongfang-amd.config.system.build.toplevel
+  # nix build .#nixosConfigurations.vm-nix.config.system.build.toplevel
   # sudo result/bin/switch-to-configuration switch
-  sudo nixos-rebuild switch --flake .#tongfang-amd
+  sudo nixos-rebuild switch --flake .#vm-nix
 }
 
 rebuild_vm() {
-  sudo nixos-rebuild build-vm --flake .#tongfang-amd
+  sudo nixos-rebuild build-vm --flake .#vm-nix
 }
 
 restart_X() {

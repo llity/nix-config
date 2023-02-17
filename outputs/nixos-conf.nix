@@ -29,11 +29,11 @@ in
     ];
   };
 
-  tongfang-amd = nixosSystem {
+  vm-nix = nixosSystem {
     inherit lib pkgs system;
     specialArgs = { inherit inputs; };
     modules = [
-      ../system/machine/tongfang-amd
+      ../system/machine/vm-nix
       ../system/configuration.nix
     ];
   };

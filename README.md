@@ -94,7 +94,7 @@ github:llity/nix-config/0161ea3bd15e0cd06696f27bd60c588991305b20
 ├───homeConfigurations: unknown
 └───nixosConfigurations
     ├───dell-xps: NixOS configuration
-    └───tongfang-amd: NixOS configuration
+    └───vm-nix: NixOS configuration
 ```
 
 As well as all the declared flake inputs.
@@ -108,7 +108,7 @@ $ nix flake metadata github:llity/nix-config
 The full home configuration is not yet fully automated but the NixOS configuration can be installed by running the following command.
 
 ```console
-$ nixos-rebuild switch --flake github:llity/nix-config#tongfang-amd
+$ nixos-rebuild switch --flake github:llity/nix-config#vm-nix
 ```
 
 Beware that the `hardware-configuration.nix` file is the result of the hardware scan of the specific machine and might not be suitable for yours.
@@ -137,7 +137,7 @@ $ ./build fresh-install # requires sudo
 The `build` script is only suitable for a fresh install customized to my personal use but you can build the flakes directly. E.g.
 
 ```console
-$ nix build .#nixosConfigurations.tongfang-amd.config.system.build.toplevel
+$ nix build .#nixosConfigurations.vm-nix.config.system.build.toplevel
 sudo result/bin/switch-to-configuration switch
 ```
 
