@@ -29,6 +29,7 @@
         efiSupport = true;
       };
     };
+  };
   # networking = {
   #   hostName = "vm-nix";
   #   interfaces = {
