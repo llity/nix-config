@@ -66,6 +66,6 @@ let
   );
 in
 {
-  gvolpe-edp = mkHome { hidpi = false; };
-  gvolpe-hdmi = mkHome { hidpi = true; };
+  llity-edp = mkHome { hidpi = false; };
+  llity-hdmi = mkHome { hidpi = true; };
 }

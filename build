@@ -27,8 +27,8 @@ pre_home() {
 post_home() {
   # Set user's profile picture for Gnome3
   echo "Setting profile picture for the accounts service"
-  sudo cp imgs/gvolpe.png /var/lib/AccountsService/icons/gvolpe
-  sudo echo "Icon=/var/lib/AccountsService/icons/gvolpe" >> /var/lib/AccountsService/users/gvolpe
+  sudo cp imgs/llity.png /var/lib/AccountsService/icons/llity
+  sudo echo "Icon=/var/lib/AccountsService/icons/llity" >> /var/lib/AccountsService/users/llity
 
   # Set screenlock wallpaper
   echo "Setting screen-lock wallpaper"
@@ -36,7 +36,7 @@ post_home() {
 }
 
 build_ci_home() {
-  nix build .#homeConfigurations.gvolpe-edp.activationPackage -L
+  nix build .#homeConfigurations.llity-edp.activationPackage -L
 }
 
 build_ci_system() {
@@ -46,7 +46,7 @@ build_ci_system() {
 
 fresh_install() {
   nix-shell -p cachix --command '
-    cachix use gvolpe-nixos
+    cachix use llity-nixos
     ./switch system
     ./build pre-home
     ./switch home

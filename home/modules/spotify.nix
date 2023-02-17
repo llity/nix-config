@@ -10,7 +10,7 @@ let
   hidpiPackage = pkgs.spotify.override { deviceScaleFactor = 1.4; };
 in
 {
-  meta.maintainers = [ hm.maintainers.gvolpe ];
+  meta.maintainers = [ hm.maintainers.llity ];
 
   options.programs.spotify = {
     enable = mkEnableOption "Play music from the Spotify music service.";

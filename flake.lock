@@ -211,13 +211,13 @@
       "locked": {
         "lastModified": 1640180970,
         "narHash": "sha256-9uuM5fwWl98uDrTHet4MdVpRZYLIQfW0HOfTxGb2o5o=",
-        "owner": "gvolpe",
+        "owner": "llity",
         "repo": "theme-bobthefish",
         "rev": "e4418e8a7de9fbd6b5053a9b9009aa84a48398cd",
         "type": "github"
       },
       "original": {
-        "owner": "gvolpe",
+        "owner": "llity",
         "repo": "theme-bobthefish",
         "type": "github"
       }
@@ -604,13 +604,13 @@
       "locked": {
         "lastModified": 1665313334,
         "narHash": "sha256-M2H8ChUWTdFAUC5omA4KNzRQCgh4bb1PHcOn63U7wMo=",
-        "owner": "gvolpe",
+        "owner": "llity",
         "repo": "mind.nvim",
         "rev": "2e40883c9e75ac4e5e178dd3a38f1280c2469b7e",
         "type": "github"
       },
       "original": {
-        "owner": "gvolpe",
+        "owner": "llity",
         "repo": "mind.nvim",
         "type": "github"
       }
@@ -680,13 +680,13 @@
       "locked": {
         "lastModified": 1676388206,
         "narHash": "sha256-rD7itHlGhoOzfuaVLWoz7B06ZHPcPZJ9ARScsthba5I=",
-        "owner": "gvolpe",
+        "owner": "llity",
         "repo": "neovim-flake",
         "rev": "3860c315b5f1fa5c2cf4b17ad7ad2d6b6ae5018a",
         "type": "github"
       },
       "original": {
-        "owner": "gvolpe",
+        "owner": "llity",
         "repo": "neovim-flake",
         "type": "github"
       }
@@ -790,13 +790,13 @@
       "locked": {
         "lastModified": 1672240039,
         "narHash": "sha256-lmct89fYDOr9YdWVvdJgklv/7WttRSiDAkoi2cvvAW4=",
-        "owner": "gvolpe",
+        "owner": "llity",
         "repo": "nmd",
         "rev": "a59e840c2e8d54415485f349760e1350cb80d911",
         "type": "github"
       },
       "original": {
-        "owner": "gvolpe",
+        "owner": "llity",
         "repo": "nmd",
         "type": "github"
       }
