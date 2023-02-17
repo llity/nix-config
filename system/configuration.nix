@@ -11,7 +11,8 @@ let
       "Iosevka"
     ];
   };
-
+  virtualisation.vmware.guest.enable = true;
+  virtualisation.vmware.guest.headless = true;  
   myfonts = pkgs.callPackage fonts/default.nix { inherit pkgs; };
 
   hosts = lib.secretManager {
