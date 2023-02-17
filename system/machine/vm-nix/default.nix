@@ -18,7 +18,7 @@
   #   initrd.kernelModules = [ "amdgpu" ];
   # };
   boot = {
-    loader.systemd-boot.enable = false;
+    loader.systemd-boot.enable = true;
     loader = {
       efi.canTouchEfiVariables = true;
       grub = {
