@@ -6,50 +6,50 @@
     ./hardware-configuration.nix
   ];
 
-  # boot = {
-  #   kernelPackages = pkgs.linuxPackages_latest;
-
-  #   # Use the systemd-boot EFI boot loader.
-  #   loader = {
-  #     efi.canTouchEfiVariables = true;
-  #     systemd-boot.enable = true;
-  #   };
-
-  #   initrd.kernelModules = [ "amdgpu" ];
-  # };
   boot = {
-    loader.systemd-boot.enable = true;
-    loader = {
-      efi.canTouchEfiVariables = true;
-      grub = {
-        enable = true;
-        version = 2;
-        device = "nodev";
-        useOSProber = true;
-        efiSupport = true;
-      };
-    };
-    loader.efi.efiSysMountPoint = "/boot/efi";
-
-    plymouth.enable = false;
-
-    #kernelPackages = pkgs.linuxPackages_xanmod;
     kernelPackages = pkgs.linuxPackages_latest;
 
-    extraModprobeConfig = ''
-      options kvm_intel nested=1
-      options kvm_intel emulate_invalid_guest_state=0
-      options kvm ignore_msrs=1
-    '';
-    #  options bbswitch load_state=0 unload_state=1
-    #'';
+    # Use the systemd-boot EFI boot loader.
+    loader = {
+      efi.canTouchEfiVariables = true;
+      systemd-boot.enable = true;
+    };
 
-    # extraModulePackages = [ pkgs.linuxPackages_latest.bbswitch ];
-    # kernelModules = [ "bbswitch" ];
-    # blacklistedKernelModules = [ "nouveau" ];
-
-    binfmt.emulatedSystems = [ "riscv64-linux" "aarch64-linux" ];
+    # initrd.kernelModules = [ "amdgpu" ];
   };
+  # boot = {
+  #   loader.systemd-boot.enable = true;
+  #   loader = {
+  #     efi.canTouchEfiVariables = true;
+  #     grub = {
+  #       enable = true;
+  #       version = 2;
+  #       device = "nodev";
+  #       useOSProber = true;
+  #       efiSupport = true;
+  #     };
+  #   };
+  #   loader.efi.efiSysMountPoint = "/boot/efi";
+
+  #   plymouth.enable = false;
+
+  #   #kernelPackages = pkgs.linuxPackages_xanmod;
+  #   kernelPackages = pkgs.linuxPackages_latest;
+
+  #   extraModprobeConfig = ''
+  #     options kvm_intel nested=1
+  #     options kvm_intel emulate_invalid_guest_state=0
+  #     options kvm ignore_msrs=1
+  #   '';
+  #   #  options bbswitch load_state=0 unload_state=1
+  #   #'';
+
+  #   # extraModulePackages = [ pkgs.linuxPackages_latest.bbswitch ];
+  #   # kernelModules = [ "bbswitch" ];
+  #   # blacklistedKernelModules = [ "nouveau" ];
+
+  #   binfmt.emulatedSystems = [ "riscv64-linux" "aarch64-linux" ];
+  # };
   # networking = {
   #   hostName = "vm-nix";
   #   interfaces = {
