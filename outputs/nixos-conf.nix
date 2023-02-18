@@ -20,11 +20,11 @@ let
   };
 in
 {
-  dell-xps = nixosSystem {
+  vm-nixos = nixosSystem {
     inherit lib pkgs system;
     specialArgs = { inherit inputs; };
     modules = [
-      ../system/machine/dell-xps
+      ../system/machine/vm-nixos
       ../system/configuration.nix
     ];
   };

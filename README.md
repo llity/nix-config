@@ -93,7 +93,7 @@ $ nix flake show github:llity/nix-config
 github:llity/nix-config/0161ea3bd15e0cd06696f27bd60c588991305b20
 ├───homeConfigurations: unknown
 └───nixosConfigurations
-    ├───dell-xps: NixOS configuration
+    ├───vm-nixos: NixOS configuration
     └───vm-nix: NixOS configuration
 ```
 

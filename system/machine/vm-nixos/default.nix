@@ -19,7 +19,7 @@
   # };
 
   # networking = {
-  #   hostName = "dell-xps-15-9560";
+  #   hostName = "vm-nixos-15-9560";
   #   interfaces.wlp2s0.useDHCP = true;
   # };
 

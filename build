@@ -40,7 +40,7 @@ build_ci_home() {
 }
 
 build_ci_system() {
-  nix build .#nixosConfigurations.dell-xps.config.system.build.toplevel -L
+  nix build .#nixosConfigurations.vm-nixos.config.system.build.toplevel -L
   nix build .#nixosConfigurations.vm-nix.config.system.build.toplevel -L
 }
 
